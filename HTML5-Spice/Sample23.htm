@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Name Information with Transitions</title>
+  <style type="text/css">
+    body
+    {
+      font-family: Sans-Serif;
+      background-color: #333333;
+    }
+    fieldset
+    {
+      margin: 1em 1em 1em 1em;
+      padding: 1em 1em 1em 1em;
+    }
+    legend
+    {
+      font-size: x-large;
+      padding: 0.25em 0.25em 0.25em 0.25em;
+      background-color: #666666;
+      border: solid 0.09em #999999;
+      color: White;
+    }
+    input
+    {
+      margin-bottom: 0.5em;
+    }
+    select
+    {
+      margin-bottom: 0.5em;
+    }
+    
+    fieldset .clear
+    {
+      clear: both;
+      margin-top: 0.25em;
+      margin-bottom: 0.25em;
+    }
+    fieldset .label
+    {
+      position: relative;
+      float: left;
+      color: White;
+      width: 10em;
+      margin-bottom: 0.5em;
+    }
+    fieldset .control
+    {
+      /* clear: both; */
+      position: relative;
+      float: none;
+    }
+    
+    /* Add 'transition' to change background color upon focus */
+    input.txtBox:focus
+    {
+      -webkit-transition: background-color 0.5s linear;
+      -moz-transition: background-color 0.5s linear;
+      -o-transition: background-color 0.5s linear;
+      transition: background-color 0.5s linear;
+      background-color: Red;
+    }
+    
+    input.submit
+    {
+      color: White;
+      background-color: #666666;
+      font-family: sans-serif;
+      border: none;
+      padding: 0.3em 0.3em 0.3em 0.3em;
+      margin: 0.5em 0.5em 0.5em 0em;
+      width: 7em;
+      box-shadow: 0.4em 0.4em rgba(0,0,0,0.8);
+      -webkit-box-shadow: 0.4em 0.4em rgba(0,0,0,0.8);
+      -moz-box-shadow: 0.4em 0.4em rgba(0,0,0,0.8);
+      -webkit-border-radius: 0.4em;
+      -moz-border-radius: 0.4em;
+      border-radius: 0.4em;
+    }
+  </style>
+</head>
+<body>
+  <form action="Result.htm">
+  <fieldset>
+    <legend>Name Information</legend>
+    <div class="clear">
+      <div class="label">
+        <label for="txtFirstName">
+          First Name</label>
+      </div>
+      <div class="control">
+        <input class="txtBox" type="text" name="txtFirstName" autofocus required placeholder="Enter your First Name" />
+      </div>
+    </div>
+    <div class="clear">
+      <div class="label">
+        <label for="txtLastName">
+          Last Name</label>
+      </div>
+      <div class="control">
+        <input class="txtBox" type="text" name="txtLastName" placeholder="Enter your Last Name" />
+      </div>
+    </div>
+    <div class="clear">
+      <div class="label">
+        <label class="label" for="txtPhone">
+          Phone</label>
+      </div>
+      <div class="control">
+        <input class="txtBox" type="text" name="txtPhone" required placeholder="Enter your Phone Number" />
+      </div>
+    </div>
+    <div class="clear">
+      <div class="label">
+        <label for="btnSubmit">
+        </label>
+      </div>
+      <div class="control">
+        <input class="submit" type="submit" value="Save" name="btnSubmit" />
+        <input class="submit" type="submit" value="Cancel" formnovalidate />
+      </div>
+    </div>
+  </fieldset>
+  </form>
+</body>
+</html>

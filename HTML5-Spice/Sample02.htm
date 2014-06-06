@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Address Information</title>
+  <style type="text/css">
+    body
+    {
+      font-family: Sans-Serif;
+      background-color: #333333;
+    }
+    fieldset
+    {
+      margin: 1em 1em 1em 1em;
+      padding: 1em 1em 1em 1em;
+    }
+      /* Add some extra styling around the legend */
+    legend
+    {
+      color: White;
+      font-size: x-large;
+      padding: 0.25em 0.25em 0.25em 0.25em;
+      background-color: #666666;
+      border: solid 0.09em #999999;
+    }
+    label
+    {
+      color: White;
+      clear: both; 
+      float: left;
+      width: 10em;
+      margin-bottom: 0.5em;
+    }
+    input
+    {
+      margin-bottom: 0.5em;
+    }
+    select
+    {
+      margin-bottom: 0.5em;
+    }
+  </style>
+</head>
+<body>
+  <form action="Result.htm">
+  <fieldset>
+    <legend>Address Information</legend>
+    <label for="txtAddress1">
+      Address 1</label>
+    <input type="text" name="txtAddress1" />
+    <br />
+    <label for="txtAddress2">
+      Address 2</label>
+    <input type="text" name="txtAddress2" />
+    <br />
+    <label class="label" for="txtCity">
+      City/Town</label>
+    <input type="text" name="txtCity" />
+    <br />
+    <label for="state">
+      State</label>
+    <select name="state">
+      <option value="AK">Alaska</option>
+      <option value="AL">Alabama</option>
+      <option value="AR">Arkansas</option>
+      <option value="AZ">Arizona</option>
+      <option value="CA">California</option>
+      <option value="IA">Iowa</option>
+      <option value="NV">Nevada</option>
+      <option value="AZ">Arizona</option>
+    </select>
+    <br />
+    <label for="txtZipCode">
+      Zip Code</label>
+    <input type="text" name="txtZipCode" />
+    <br />
+    <input type="submit" value="Save" />
+    <input type="submit" value="Cancel" />
+  </fieldset>
+  </form>
+</body>
+</html>

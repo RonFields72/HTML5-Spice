@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Address Information</title>
+  <style type="text/css">
+    body
+    {
+      font-family: Sans-Serif;
+      background-color: #333333;
+    }
+    fieldset
+    {
+      margin: 1em 1em 1em 1em;
+      padding: 1em 1em 1em 1em;
+    }
+    legend
+    {
+      font-size: x-large;
+      padding: 0.25em 0.25em 0.25em 0.25em;
+      background-color: #666666;
+      border: solid 0.09em #999999;
+      color: White;
+    }
+    fieldset .clear
+    {
+      clear: both;
+      margin-top: 0.25em;
+      margin-bottom: 0.25em;
+    }
+    fieldset .label
+    {
+      position: relative;
+      float: left;
+      color: White;
+      width: 10em;
+      margin-bottom: 0.5em;
+    }
+    fieldset .control
+    {
+      position: relative;
+      float: none;
+    }
+    input
+    {
+      margin-bottom: 0.5em;
+    }
+    input.submit
+    {
+      color: White;
+      background-color: transparent;
+      font-family: sans-serif;
+      font-size: medium;
+      border: none;
+      padding: 0.2em 0.2em 0.2em 0.2em;
+      margin: 0.6em 0.4em 0.4em 0em;
+    }
+    .imageButton
+    {
+      color: White;
+      background-color: #666666;
+      font-family: sans-serif;
+      border: 0.08em solid Black;
+      padding: 0.1em 0.1em 0.1em 0.1em;
+      margin: 0.5em 0.5em 0.5em 0em;
+      width: 8em;
+      float: left;
+      box-shadow: 0.4em 0.4em rgba(0,0,0,0.8);
+      -webkit-box-shadow: 0.4em 0.4em rgba(0,0,0,0.8);
+      -moz-box-shadow: 0.4em 0.4em rgba(0,0,0,0.8);
+      -webkit-border-radius: 0.4em;
+      -moz-border-radius: 0.4em;
+      border-radius: 0.4em;
+    }
+    img
+    {
+      margin: -0.1em -0.1em -0.1em -0.1em;
+      padding: 0em;
+      float: left;
+    }
+    
+    select
+    {
+      margin-bottom: 0.5em;
+    }
+  </style>
+</head>
+<body>
+  <form action="Result.htm">
+  <fieldset>
+    <legend>Address Information</legend>
+    <div class="clear">
+      <div class="label">
+        <label for="txtAddress1">
+          Address 1</label>
+      </div>
+      <div class="control">
+        <input type="text" name="txtAddress1" autofocus required placeholder="Enter Street Address 1" />
+      </div>
+    </div>
+    <div class="clear">
+      <div class="label">
+        <label for="txtAddress2">
+          Address 2</label>
+      </div>
+      <div class="control">
+        <input type="text" name="txtAddress2" placeholder="Enter Street Address 2" />
+      </div>
+    </div>
+    <div class="clear">
+      <div class="label">
+        <label class="label" for="txtCity">
+          City/Town</label>
+      </div>
+      <div class="control">
+        <input type="text" name="txtCity" required placeholder="Enter a City" />
+      </div>
+    </div>
+    <div class="clear">
+      <div class="label">
+        <label for="state">
+          State</label>
+      </div>
+      <div class="control">
+        <select name="state">
+          <option value="AK">Alaska</option>
+          <option value="AL">Alabama</option>
+          <option value="AR">Arkansas</option>
+          <option value="AZ">Arizona</option>
+          <option value="CA">California</option>
+          <option value="IA">Iowa</option>
+          <option value="NV">Nevada</option>
+          <option value="AZ">Arizona</option>
+        </select>
+      </div>
+    </div>
+    <div class="clear">
+      <div class="label">
+        <label for="txtZipCode">
+          Zip Code</label>
+      </div>
+      <div class="control">
+        <input type="text" name="txtZipCode" required placeholder="Enter a Zip Code" pattern="[0-9]{5}(\-[0-9]{4})?"
+          title="A zip code in the format of 99999 or 99999-9999" />
+      </div>
+    </div>
+    <div class="clear">
+      <div class="label">
+        <label for="btnSubmit">
+        </label>
+      </div>
+      <div class="control">
+        <div class="imageButton">
+          <img src="images/Save-White.png" alt="Save" />
+          <input class="submit" type="submit" value="Save" name="btnSubmit" />
+        </div>
+        <div class="imageButton">
+          <img src="images/Cancel-White.png" alt="Cancel" />
+          <input class="submit" type="submit" value="Cancel" formnovalidate />
+        </div>
+      </div>
+    </div>
+  </fieldset>
+  </form>
+</body>
+</html>

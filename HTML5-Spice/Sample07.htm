@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Personal Information</title>
+  <script type="text/javascript">
+   <!--
+    window.addEventListener('load', function () {
+      // Get the age output control
+      var out = document.getElementById('ageOutput');
+      // Get the age control
+      var age = document.getElementById('age');
+
+      out.value = age.value;
+    }, false);
+    // -->
+  </script>
+  <style type="text/css">
+    body
+    {
+      font-family: Sans-Serif;
+      background-color: #333333;
+    }
+    fieldset
+    {
+      margin: 1em 1em 1em 1em;
+      padding: 1em 1em 1em 1em;
+    }
+    legend
+    {
+      font-size: x-large;
+      padding: 0.25em 0.25em 0.25em 0.25em;
+      background-color: #666666;
+      border: solid 0.09em #999999;
+      color: White;
+    }
+    input
+    {
+      margin-bottom: 0.5em;
+    }
+    select
+    {
+      margin-bottom: 0.5em;
+    }
+    
+    fieldset .clear
+    {
+      clear: both;
+      margin-top: 0.25em;
+      margin-bottom: 0.25em;
+    }
+    fieldset .label
+    {
+      position: relative;
+      float: left;
+      color: White;
+      width: 10em;
+      margin-bottom: 0.5em;
+    }
+    fieldset .control
+    {
+      /* clear: both; */
+      position: relative;
+      float: none;
+    }
+    input.submit
+    {
+      color: White;
+      background-color: #666666;
+      font-family: sans-serif;
+      border: none;
+      padding: 0.3em 0.3em 0.3em 0.3em;
+      margin: 0.5em 0.5em 0.5em 0em;
+      width: 7em;
+      box-shadow: 0.4em 0.4em rgba(0,0,0,0.8);
+      -webkit-box-shadow: 0.4em 0.4em rgba(0,0,0,0.8);
+      -moz-box-shadow: 0.4em 0.4em rgba(0,0,0,0.8);
+      -webkit-border-radius: 0.4em;
+      -moz-border-radius: 0.4em;
+      border-radius: 0.4em;
+    }
+    
+    /* Added new Styles for this HTML Form */
+    p
+    {
+      color: White;
+    }
+    output
+    {
+      color: White;
+    }
+    img
+    {
+      height: 5em;
+    }
+    figure
+    {
+      float: left;
+      margin: 0em 0em 0em 0em;
+    }
+    figcaption
+    {
+      color: White;
+    }
+    .plusminus
+    {
+      border: 0.05em solid black;
+      height: 1em;
+    }
+  </style>
+</head>
+<body>
+  <form action="Result.htm">
+  <fieldset>
+    <legend>Please Enter Your Personal Information</legend>
+    <div class="clear">
+      <div class="label">
+        <label for="salutation">
+          Salutation</label>
+      </div>
+      <div class="control">
+        <input type="text" autofocus list="salutationList" name="salutation" class="textInput" />
+        <datalist id="salutationList">
+          <option value="Dr">Dr</option>
+          <option value="Mr">Mr</option>
+          <option value="Mrs">Mrs</option>
+          <option value="Miss">Miss</option>
+        </datalist>
+      </div>
+    </div>
+    <div class="clear">
+      <div class="label">
+        <label for="txtFirst">
+          First Name</label>
+      </div>
+      <div class="control">
+        <input type="text" required name="txtFirst" placeholder="Enter Your First Name" />
+      </div>
+    </div>
+    <div class="clear">
+      <div class="label">
+        <label for="txtMiddle">
+          Middle Name/Initial</label>
+      </div>
+      <div class="control">
+        <input type="text" name="txtMiddle" placeholder="Enter Your Middle Name or Initial" />
+      </div>
+    </div>
+    <div class="clear">
+      <div class="label">
+        <label for="txtLast">
+          Last Name</label>
+      </div>
+      <div class="control">
+        <input type="text" required name="txtLast" placeholder="Enter Your Last Name" />
+      </div>
+    </div>
+    <div class="clear">
+      <div class="label">
+        <label for="txtEmail">
+          Email Address</label>
+      </div>
+      <div class="control">
+        <input type="email" required name="txtEmail" placeholder="Enter Your Email Address" />
+      </div>
+    </div>
+    <div class="clear">
+      <div class="label">
+        <label for="txtHomePhone">
+          Home Phone</label>
+      </div>
+      <div class="control">
+        <input type="tel" name="txtHomePhone" placeholder="Enter Your Home Phone" pattern="^(\([2-9]|[2-9])(\d{2}|\d{2}\))(-|.|\s)?\d{3}(-|.|\s)?\d{4}$"
+          title="Home Phone number must be in format 999 999 9999 or (999) 999-9999" />
+      </div>
+    </div>
+    <div class="clear">
+      <div class="label">
+        <label for="txtCellPhone">
+          Cell Phone</label>
+      </div>
+      <div class="control">
+        <input type="tel" name="txtCellPhone" placeholder="Enter Your Cell Phone" pattern="^(\([2-9]|[2-9])(\d{2}|\d{2}\))(-|.|\s)?\d{3}(-|.|\s)?\d{4}$"
+          title="Cell Phone number must be in format 999 999 9999 or (999) 999-9999" />
+      </div>
+    </div>
+    <div class="clear">
+      <div class="label">
+        <label for="age">
+          Your Age
+        </label>
+      </div>
+      <div class="control">
+        <img src="images/minus.png" class="plusminus" onclick="age.value = age.value - 1; ageOutput.value = age.value;" />
+        <input type="range" min="21" max="110" step="1" id="age" value="30" onchange="ageOutput.value = age.value;" />
+        <img src="images/plus.png" class="plusminus" onclick="age.value = age.value + 1; ageOutput.value = age.value;" />
+        <output id="ageOutput" />
+      </div>
+    </div>
+    <div class="clear">
+      <div class="label">
+        <label for="picture">
+          Your Picture
+        </label>
+      </div>
+      <div class="control">
+        <figure>
+          <!-- no alt necessary when using figcaption. -->
+          <img src="Images/Person.jpg" alt="" />
+          <figcaption>This is a picture of you.</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="clear">
+      <div class="label">
+        <label for="btnSubmit">
+        </label>
+      </div>
+      <div class="control">
+        <input class="submit" type="submit" value="Save" name="btnSubmit" />
+        <input class="submit" type="submit" value="Cancel" formnovalidate />
+      </div>
+    </div>
+  </fieldset>
+  </form>
+</body>
+</html>

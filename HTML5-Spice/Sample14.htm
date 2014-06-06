@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Navigation</title>
+  <script type="text/javascript">
+   <!--
+    window.addEventListener('load', function () {
+      // Get the age output control
+      var out = document.getElementById('ageOutput');
+      // Get the age control
+      var age = document.getElementById('age');
+
+      out.value = age.value;
+    }, false);
+    // -->
+  </script>
+  <link href="Styles/DarkBlueWhite.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <nav>
+    <a href="Sample11.htm">Gray / White</a>
+    <a href="Sample12.htm">Blue / White</a>
+    <a href="Sample13.htm">Black / White</a>
+    <a href="Sample14.htm">Dark Blue / White</a>
+    <a href="Sample15.htm">Dark Red / White</a>
+  </nav>
+  <form action="Result.htm">
+  <fieldset>
+    <legend>Please Enter Your Personal Information</legend>
+    <div class="clear">
+      <div class="label">
+        <label for="txtFirst">
+          First Name</label>
+      </div>
+      <div class="control">
+        <input type="text" autofocus required name="txtFirst" placeholder="Enter Your First Name" />
+      </div>
+    </div>
+    <div class="clear">
+      <div class="label">
+        <label for="txtMiddle">
+          Middle Name/Initial</label>
+      </div>
+      <div class="control">
+        <input type="text" name="txtMiddle" placeholder="Enter Your Middle Name or Initial" />
+      </div>
+    </div>
+    <div class="clear">
+      <div class="label">
+        <label for="txtLast">
+          Last Name</label>
+      </div>
+      <div class="control">
+        <input type="text" required name="txtLast" placeholder="Enter Your Last Name" />
+      </div>
+    </div>
+    <div class="clear">
+      <div class="label">
+        <label for="txtEmail">
+          Email Address</label>
+      </div>
+      <div class="control">
+        <input type="email" required name="txtEmail" placeholder="Enter Your Email Address" />
+      </div>
+    </div>
+    <div class="clear">
+      <div class="label">
+        <label for="txtHomePhone">
+          Home Phone</label>
+      </div>
+      <div class="control">
+        <input type="tel" name="txtHomePhone" placeholder="Enter Your Home Phone" pattern="^(\([2-9]|[2-9])(\d{2}|\d{2}\))(-|.|\s)?\d{3}(-|.|\s)?\d{4}$"
+          title="Home Phone number must be in format 999 999 9999 or (999) 999-9999" />
+      </div>
+    </div>
+    <div class="clear">
+      <div class="label">
+        <label for="txtCellPhone">
+          Cell Phone</label>
+      </div>
+      <div class="control">
+        <input type="tel" name="txtCellPhone" placeholder="Enter Your Cell Phone" pattern="^(\([2-9]|[2-9])(\d{2}|\d{2}\))(-|.|\s)?\d{3}(-|.|\s)?\d{4}$"
+          title="Cell Phone number must be in format 999 999 9999 or (999) 999-9999" />
+      </div>
+    </div>
+    <div class="clear">
+      <div class="label">
+        <label for="age">
+          Your Age
+        </label>
+      </div>
+      <div class="control">
+        <img src="images/minus.png" alt="Add" class="plusminus" onclick="age.value = age.value - 1; ageOutput.value = age.value;" />
+        <input type="range" min="21" max="110" step="1" id="age" value="30" onchange="ageOutput.value = age.value;" />
+        <img src="images/plus.png" alt="Subtract" class="plusminus" onclick="age.value = age.value + 1; ageOutput.value = age.value;" />
+        <output id="ageOutput" />
+      </div>
+    </div>
+    <div class="clear">
+      <div class="label">
+        <label for="picture">
+          Your Picture
+        </label>
+      </div>
+      <div class="control">
+        <figure>
+          <!-- no alt necessary when using figcaption. -->
+          <img src="Images/Person.jpg" alt="" />
+          <figcaption>This is a picture of you.</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="clear">
+      <div class="label">
+        <label for="btnSubmit">
+        </label>
+      </div>
+      <div class="control">
+        <input class="submit" type="submit" value="Save" name="btnSubmit" />
+        <input class="submit" type="submit" value="Cancel" formnovalidate />
+      </div>
+    </div>
+  </fieldset>
+  </form>
+</body>
+</html>

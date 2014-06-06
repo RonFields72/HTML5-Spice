@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Address Information</title>
+  <style type="text/css">
+    body
+    {
+      font-family: Sans-Serif;
+      background-color: #333333;
+    }
+    fieldset
+    {
+      margin: 1em 1em 1em 1em;
+      padding: 1em 1em 1em 1em;
+    }
+    legend
+    {
+      font-size: x-large;
+      padding: 0.25em 0.25em 0.25em 0.25em;
+      background-color: #666666;
+      border: solid 0.09em #999999;
+      color: White;
+    }
+    input
+    {
+      margin-bottom: 0.5em;
+    }
+    select
+    {
+      margin-bottom: 0.5em;
+    }
+    input.submit
+    {
+      color: White;
+      background-color: #666666;
+      font-family: sans-serif;
+      border: none;
+      padding: 0.3em 0.3em 0.3em 0.3em;
+      margin: 0.5em 0.5em 0.5em 0em;
+    }
+    
+    /* New styles for fieldset label and controls */
+    fieldset .clear
+    {
+      clear: both;
+      margin-top: 0.25em;
+      margin-bottom: 0.25em;
+    }
+    /* We now use a 'class' style called 'label' */
+    /* This is useful if we want to use any other control besides a label within the 'label' area */
+    fieldset .label
+    {
+      position: relative;
+      float: left;
+      color: White;
+      width: 10em;
+      margin-bottom: 0.5em;
+    }
+    /* Uncomment the 'clear: both' to put label and control on separate lines */
+    fieldset .control
+    {
+      clear: both;
+      position: relative;
+      float: none;
+    }
+  </style>
+</head>
+<body>
+  <form action="Result.htm">
+  <fieldset>
+    <legend>Address Information</legend>
+    <div class="clear">
+      <div class="label">
+        <label for="txtAddress1">
+          Address 1</label>
+      </div>
+      <div class="control">
+        <input type="text" name="txtAddress1" />
+      </div>
+    </div>
+    <div class="clear">
+      <div class="label">
+        <label for="txtAddress2">
+          Address 2</label>
+      </div>
+      <div class="control">
+        <input type="text" name="txtAddress2" />
+      </div>
+    </div>
+    <div class="clear">
+      <div class="label">
+        <label class="label" for="txtCity">
+          City/Town</label>
+      </div>
+      <div class="control">
+        <input type="text" name="txtCity" />
+      </div>
+    </div>
+    <div class="clear">
+      <div class="label">
+        <label for="state">
+          State</label>
+      </div>
+      <div class="control">
+        <select name="state">
+          <option value="AK">Alaska</option>
+          <option value="AL">Alabama</option>
+          <option value="AR">Arkansas</option>
+          <option value="AZ">Arizona</option>
+          <option value="CA">California</option>
+          <option value="IA">Iowa</option>
+          <option value="NV">Nevada</option>
+          <option value="AZ">Arizona</option>
+        </select>
+      </div>
+    </div>
+    <div class="clear">
+      <div class="label">
+        <label for="txtZipCode">
+          Zip Code</label>
+      </div>
+      <div class="control">
+        <input type="text" name="txtZipCode" />
+      </div>
+    </div>
+    <div class="clear">
+      <div class="label">
+        <label for="btnSubmit">
+        </label>
+      </div>
+      <div class="control">
+        <input class="submit" type="submit" value="Save" name="btnSubmit" />
+        <input class="submit" type="submit" value="Cancel" />
+      </div>
+    </div>
+  </fieldset>
+  </form>
+</body>
+</html>

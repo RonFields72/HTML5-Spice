@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Sign Up</title>
+  <style type="text/css">
+    body
+    {
+      font-family: Sans-Serif;
+      background-color: #333333;
+    }
+    p
+    {
+      color: White;
+    }
+    output
+    {
+      color: White;
+    }
+    
+    fieldset
+    {
+      margin: 1em 1em 1em 1em;
+      padding: 1em 1em 1em 1em;
+    }
+    legend
+    {
+      font-size: x-large;
+      padding: 0.25em 0.25em 0.25em 0.25em;
+      background-color: #666666;
+      border: solid 0.09em #999999;
+      color: White;
+    }
+    fieldset .clear
+    {
+      clear: both;
+      margin-top: 0.25em;
+      margin-bottom: 0.25em;
+    }
+    fieldset .label
+    {
+      position: relative;
+      float: left;
+      color: White;
+      width: 10em;
+      margin-bottom: 0.5em;
+    }
+    fieldset .control
+    {
+      position: relative;
+      float: none;
+    }
+    select
+    {
+      margin-bottom: 0.5em;
+    }
+    figure
+    {
+      float: left;
+      margin: 0em 0em 0em 0em;
+    }
+    figcaption
+    {
+      color: White;
+    }
+    .plusminus
+    {
+      border: 0.1em solid #666666;
+      height: 1em;
+    }
+    input
+    {
+      margin-bottom: 0.5em;
+    }
+    
+    input.submit
+    {
+      color: Black;
+      background: rgb(181,189,200); /* Old browsers */
+      background: -moz-radial-gradient(center, ellipse cover,  rgba(181,189,200,1) 0%, rgba(130,140,149,1) 36%, rgba(40,52,59,1) 100%); /* FF3.6+ */
+      background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(181,189,200,1)), color-stop(36%,rgba(130,140,149,1)), color-stop(100%,rgba(40,52,59,1))); /* Chrome,Safari4+ */
+      background: -webkit-radial-gradient(center, ellipse cover,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-radial-gradient(center, ellipse cover,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* Opera 12+ */
+      background: -ms-radial-gradient(center, ellipse cover,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* IE10+ */
+      background: radial-gradient(center, ellipse cover,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+      box-shadow: 0.2em 0.2em rgba(0,0,0,0.8);
+      -webkit-box-shadow: 0.2em 0.2em rgba(0,0,0,0.8);
+      -moz-box-shadow: 0.2em 0.2em rgba(0,0,0,0.8);
+      -webkit-border-radius: 0.4em;
+      -moz-border-radius: 0.4em;
+      border-radius: 0.4em;
+      font-family: sans-serif;
+      font-size: large;
+      border: none;
+      width: 8em;
+      padding: 0.3em 0.3em 0.3em 0.3em;
+      margin: 0.4em 0.2em 0.8em 0.4em;
+    }
+    
+    .descriptiveButton
+    {
+      color: White;
+      background-color: #666666;
+      font-family: sans-serif;
+      border: 0.08em solid Black;
+      padding: 0.1em 0.1em 0.1em 0.1em;
+      margin: 0.5em 0.5em 0.5em 0.5em;
+      width: 10em;
+      float: left;
+      height: 15em;
+      box-shadow: 0.4em 0.4em rgba(0,0,0,0.8);
+      -webkit-box-shadow: 0.4em 0.4em rgba(0,0,0,0.8);
+      -moz-box-shadow: 0.4em 0.4em rgba(0,0,0,0.8);
+      -webkit-border-radius: 0.4em;
+      -moz-border-radius: 0.4em;
+      border-radius: 0.4em;
+    }
+    
+    span
+    {
+      clear: both;
+      text-align: center;
+      display: inline-block;
+      margin: 0.2em 0.4em 0.4em 0.4em;
+      padding: 0.4em 0.4em 0.4em 0.4em;
+    }
+  </style>
+</head>
+<body>
+  <form action="Result.htm">
+  <fieldset>
+    <legend>Sign Up</legend>
+    <div class="clear">
+      <div class="label">
+        <label for="txtName">
+          Your Name</label>
+      </div>
+      <div class="control">
+        <input type="text" autofocus required name="txtName" placeholder="Enter Your Name" />
+      </div>
+    </div>
+    <div class="clear">
+      <div class="label">
+        <label for="txtEmail">
+          Email Address</label>
+      </div>
+      <div class="control">
+        <input type="email" required name="txtEmail" placeholder="Enter Your Email Address" />
+      </div>
+    </div>
+    <div class="clear">
+      <div class="label">
+        <label for="btnSubmit">
+        </label>
+      </div>
+      <div class="control">
+        <div class="descriptiveButton">
+          <input class="submit" type="submit" value="Trial Version" name="btnSubmit" />
+          <span>Click here to sign up for our 30 day trial version of this exciting product.
+            We will send you a confirmation email within 1 hour with your trial code.</span>
+        </div>
+        <div class="descriptiveButton">
+          <input class="submit" type="submit" value="Full Version" />
+          <span>Click here to sign up for our best product money can buy. We will send you a
+            confirmation email immediately with your personal code.</span>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+  </form>
+</body>
+</html>

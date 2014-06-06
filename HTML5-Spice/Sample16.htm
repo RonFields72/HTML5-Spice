@@ -1,0 +1,286 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>JQuery Drop Down Menu</title>
+  <script type="text/javascript" src="Scripts/jquery.js">
+  </script>
+  <script type="text/javascript">
+    $(function () {
+      $("ul.menuDropDown li").hover(function () {
+
+        $(this).addClass("hover");
+        $('ul:first', this).css('visibility', 'visible');
+
+      }, function () {
+
+        $(this).removeClass("hover");
+        $('ul:first', this).css('visibility', 'hidden');
+      });
+
+    });
+  </script>
+  <style type="text/css">
+    body
+    {
+      font-family: Sans-Serif;
+      background-color: #333333;
+    }
+    
+    h2
+    {
+      color: Black;
+    }
+    
+    pre
+    {
+      color: White;
+    }
+    
+    p
+    {
+      color: White;
+      margin: 1em;
+    }
+    
+    nav
+    {
+      display: inline-block;
+      background: rgb(181,189,200); /* Old browsers */ /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+      background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2I1YmRjOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjM2JSIgc3RvcC1jb2xvcj0iIzgyOGM5NSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyODM0M2IiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+      background: -moz-linear-gradient(top, rgba(181,189,200,1) 0%, rgba(130,140,149,1) 36%, rgba(40,52,59,1) 100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(181,189,200,1)), color-stop(36%,rgba(130,140,149,1)), color-stop(100%,rgba(40,52,59,1))); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(top, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* IE10+ */
+      background: linear-gradient(top, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=0 ); /* IE6-8 */
+      box-shadow: 0.5em 0.5em rgba(0,0,0,0.8);
+      -webkit-box-shadow: 0.5em 0.5em rgba(0,0,0,0.8);
+      -moz-box-shadow: 0.5em 0.5em rgba(0,0,0,0.8);
+      -webkit-border-radius: 0.5em;
+      -moz-border-radius: 0.5em;
+      border-radius: 1em;
+      padding: 0.5em 0.5em 0.5em 0.5em;
+      margin: 0.5em 0.5em 0.5em 0.5em;
+    }
+    
+    a
+    {
+      background: rgb(181,189,200); /* Old browsers */ /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+      background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2I1YmRjOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjM2JSIgc3RvcC1jb2xvcj0iIzgyOGM5NSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyODM0M2IiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+      background: -moz-linear-gradient(top, rgba(181,189,200,1) 0%, rgba(130,140,149,1) 36%, rgba(40,52,59,1) 100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(181,189,200,1)), color-stop(36%,rgba(130,140,149,1)), color-stop(100%,rgba(40,52,59,1))); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(top, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* IE10+ */
+      background: linear-gradient(top, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=0 ); /* IE6-8 */
+      box-shadow: 0.5em 0.5em rgba(0,0,0,0.8);
+      -webkit-box-shadow: 0.5em 0.5em rgba(0,0,0,0.8);
+      -moz-box-shadow: 0.5em 0.5em rgba(0,0,0,0.8);
+      -webkit-border-radius: 0.5em;
+      -moz-border-radius: 0.5em;
+      border-radius: 0.5em;
+      color: White;
+      text-decoration: none;
+      display: inline-block;
+      text-align: center;
+      height: 0.5em;
+      width: 5em;
+      margin: 0.5em 0.5em 0.5em 0.5em;
+      padding: 0.3em 1em 1.1em 1em;
+      border: 0.09em solid black;
+    }
+    
+    a:hover
+    {
+      background: rgb(181,189,200); /* Old browsers */
+      background: -moz-radial-gradient(center, ellipse cover,  rgba(181,189,200,1) 0%, rgba(130,140,149,1) 36%, rgba(40,52,59,1) 100%); /* FF3.6+ */
+      background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(181,189,200,1)), color-stop(36%,rgba(130,140,149,1)), color-stop(100%,rgba(40,52,59,1))); /* Chrome,Safari4+ */
+      background: -webkit-radial-gradient(center, ellipse cover,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-radial-gradient(center, ellipse cover,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* Opera 12+ */
+      background: -ms-radial-gradient(center, ellipse cover,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* IE10+ */
+      background: radial-gradient(center, ellipse cover,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    }
+    
+    ul
+    {
+      margin: 0em;
+      padding: 0em;
+      list-style: none;
+    }
+    
+    .main
+    {
+      width: 75%;
+      margin: 1em auto;
+    }
+    
+    /* 1st Level Menus */
+    ul.menuDropDown
+    {
+      /* add any additional style here */
+    }
+    
+    ul.menuDropDown li
+    {
+      float: left;
+      width: 8em;
+      font-weight: bold;
+    }
+    
+    ul.menuDropDown a:active
+    {
+      color: black;
+    }
+    
+    ul.menuDropDown li.hover, ul.menuDropDown li:hover
+    {
+      position: relative;
+    }
+    
+    ul.menuDropDown li.hover a
+    {
+      color: black;
+    }
+    
+    /* 2nd level menus */
+    ul.menuDropDown ul
+    {
+      background: rgb(181,189,200); /* Old browsers */ /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+      background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2I1YmRjOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjM2JSIgc3RvcC1jb2xvcj0iIzgyOGM5NSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyODM0M2IiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+      background: -moz-linear-gradient(top, rgba(181,189,200,1) 0%, rgba(130,140,149,1) 36%, rgba(40,52,59,1) 100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(181,189,200,1)), color-stop(36%,rgba(130,140,149,1)), color-stop(100%,rgba(40,52,59,1))); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(top, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* IE10+ */
+      background: linear-gradient(top, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=0 ); /* IE6-8 */
+      color: White;
+      text-decoration: none;
+      display: inline-block;
+      text-align: center;
+      margin: 0.5em 0.5em 0.5em 0.5em;
+      padding: 0.3em 1em 1.1em 1em;
+      border: 0.09em solid black;
+      box-shadow: 0.5em 0.5em rgba(0,0,0,0.8);
+      -webkit-box-shadow: 0.5em 0.5em rgba(0,0,0,0.8);
+      -moz-box-shadow: 0.5em 0.5em rgba(0,0,0,0.8);
+      -webkit-border-radius: 0.5em;
+      -moz-border-radius: 0.5em;
+      border-radius: 0.5em;
+      visibility: hidden;
+      position: absolute;
+      top: 2.2em;
+      left: 0em;
+    }
+    
+    ul.menuDropDown ul li
+    {
+      float: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <h2>
+      Sample JQuery Drop Down Menu</h2>
+    <nav>
+      <ul class="menuDropDown">
+        <li>
+          <a href="#">Address</a>
+          <ul>
+            <li>
+              <a href="#">Sample 01</a></li>
+            <li>
+              <a href="#">Sample 02</a>
+            </li>
+            <li>
+              <a href="#">Sample 03</a></li>
+            <li>
+              <a href="#">Sample 04</a></li>
+            <li>
+              <a href="#">Sample 05</a></li>
+            <li>
+              <a href="#">Sample 06</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Personal</a>
+          <ul>
+            <li>
+              <a href="#">Sample 07</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Navigation</a>
+          <ul>
+            <li>
+              <a href="#">Sample 08</a>
+            </li>
+            <li>
+              <a href="#">Sample 09</a>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Gradients</a>
+          <ul>
+            <li>
+              <a href="#">Sample 10</a></li>
+            <li>
+              <a href="#">Sample 11</a></li>
+            <li>
+              <a href="#">Sample 12</a></li>
+            <li>
+              <a href="#">Sample 13</a></li>
+            <li>
+              <a href="#">Sample 14</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <br />
+    <br />
+    <h2>
+      Retrieving Data: From Synchronous to Asynchronous</h2>
+    <p>
+      Published on
+      <time datetime="2011-10-12" pubdate>Oct. 12, 2011</time></p>
+    <p>
+      As technology keeps moving on, we as developers are continually challenged to learn
+      new ways of doing our jobs. Many years ago (starting as far back as Visual Basic
+      4.0) the movement was toward OOP and creating N-Tier applications. This meant wrapping
+      up the data returned from DAO, RDO or ADO into classes and collections of classes.
+      .NET came along and we started using ADO.NET to retrieve data. However, usage of
+      classes and collection classes changed very little, at least conceptually. In .NET
+      2.0 Generics were introduced, but this just helped simplify our code. Again, our
+      basic class structure changed very little.</p>
+    <p>
+      If you were a normal desktop developer (Windows Forms) or an ASP.NET developer you
+      were able to simply connect to your database, retrieve your data, and life was good.
+      However, as more devices have exploded into our world, we are forced to learn new
+      ways to consume our data. Most prevalent is the use of web services or Service Oriented
+      Architecture (SOA). Luckily, web services can be consumed from desktop apps, web
+      apps, and mobile apps. If you are doing desktop apps and web apps, you can most
+      likely consume these services using a synchronous model. If you are using Silverlight,
+      HTML5 with JS or other mobile applications, you will have to use an asynchronous
+      model. Moving from synchronous to asynchronous is not too difficult; it just takes
+      a little different style of programming.</p>
+    <h2>
+      The Product Class</h2>
+    <p>
+      In the sample code you will be using a Product class. This class has just four properties
+      and is used to store a single product. This class is shown below:</p>
+    <pre>
+    public class Product
+    {
+      public int ProductId { get; set;}
+      public string ProductName { get; set; }
+      public DateTime IntroductionDate { get; set; }
+      public decimal Price { get; set; }
+    }
+    </pre>
+  </div>
+</body>
+</html>
